@@ -1,26 +1,3 @@
-# March
-
-A simple tool that lets you connect all your stack (github, linear, calendar etc.) and see all your action items in email-like split inboxes.
-
-## Features
-
-### Everything is an Object
-In March, everything is treated as objects with types:
-- Meeting → type: meeting
-- Note → type: note
-- And more...
-
-### Smart Calendar Integration
-Every date on your calendar is an array to hold objects with customizable rules and filters.
-
-### Example Usage
-
-```plaintext
-Tuesday, Dec 24:
-Rule: Show all scheduled items and meetings of the date and activities such as notes or bookmarks created.
-Note: All unorganized items stay in inbox.
-```
-
 ## Getting Started
 
 1. Clone the repository
