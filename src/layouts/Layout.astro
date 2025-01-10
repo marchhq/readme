@@ -1,0 +1,39 @@
+---
+interface Props {
+	title?: string;
+}
+
+const { title = "March - Your Smart Stack Manager" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="March - Connect all your stack and see action items in email-like split inboxes" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-[#0A0A0A]">
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--gradient-1: linear-gradient(to right, #6366f1, #3b82f6);
+		--gradient-2: linear-gradient(to right, #3b82f6, #06b6d4);
+		--gradient-3: linear-gradient(to right, #06b6d4, #22c55e);
+	}
+
+	html {
+		font-family: 'Inter', system-ui, sans-serif;
+		background: #0A0A0A;
+		color: white;
+	}
+</style>
