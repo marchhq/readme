@@ -3,119 +3,152 @@ import Layout from '../layouts/Layout.astro';
 
 const features = [
   {
-    title: "March",
-    description: "linear companion for open source and user facing teams."
-  },
-  {
-    title: "🚀 Features",
+    title: "march",
     description: `<div class="space-y-2 text-[13px]">
-      <div class="flex">
-        <span class="mr-2">•</span>
+      <div class="flex flex-col gap-4">
         <div>
-          <strong class="text-gray-900">Everything is an Object</strong>: In March, everything is treated as objects with types. Meetings, notes, and more are all objects with specific types.
+          second brain for people living on mars;
         </div>
-      </div>
-      <div class="flex">
-        <span class="mr-2">•</span>
         <div>
-          <strong class="text-gray-900">Smart Calendar Integration</strong>: Every date on your calendar is an array to hold objects with customizable rules and filters.
+          an email like interface with splits — connected with your productivity stack (calendar, github, slack, linear) to help you get things done.
         </div>
-      </div>
-      <div class="flex">
-        <span class="mr-2">•</span>
         <div>
-          <strong class="text-gray-900">Organized Inbox</strong>: All unorganized items stay in inbox, making it easy to manage and process new items.
-        </div>
-      </div>
-      <div class="flex">
-        <span class="mr-2">•</span>
-        <div>
-          <strong class="text-gray-900">Custom Rules</strong>: Set up rules to automatically organize and filter your items based on date, type, and other properties.
+          in march everything is treated as objects with types (meetings, linear issues, notes, and more are all objects with specific types e.g., type:meeting, type:todo, type:note).
         </div>
       </div>
     </div>`
   },
   {
-    title: "🔗 Links",
+    title: "🚀 features",
+    description: `<div class="space-y-2 text-[13px]">
+      <div class="flex">
+        <span class="mr-2">•</span>
+        <div>
+          <strong class="text-gray-900">array (split view like superhuman)</strong>: create an array to see specific set of action items, the default arrays are current date to show all the objects related to that date and inbox to hold all unorganised objects.
+        </div>
+      </div>
+      <div class="flex">
+        <span class="mr-2">•</span>
+        <div>
+          <strong class="text-gray-900">agentic via command k</strong>: can talk to all connected apps and perform actions, gather action items that matters or even suggest you to do things.
+        </div>
+      </div>
+      <div class="flex">
+        <span class="mr-2">•</span>
+        <div>
+          <strong class="text-gray-900">dynamic interface</strong>: you can customise a view (list, board, graph) of an object (note, todo, page) by its type.
+        </div>
+      </div>
+      <div class="flex">
+        <span class="mr-2">•</span>
+        <div>
+          <strong class="text-gray-900">rulesets</strong>: create intelligent rules like:
+        </div>
+      </div>
+      <div class="flex">
+        <span class="mr-2">—</span>
+        <div>hey march, keep suggesting me object, type: articles I saved and objects, type: tweets I bookmarked during the weekend.</div>
+      </div>
+      <div class="flex">
+        <span class="mr-2">—</span>
+        <div>send me a weekly summary email about what I have done with a procrastination score.</div>
+      </div>
+    </div>`
+  },
+  {
+    title: "🔗 links",
     links: [
       {
-        label: "Sign in",
-        url: "https://app.march.dev",
-        display: "app.march.dev"
+        label: "join the alpha",
+        url: "https://app.march.cat",
+        display: "app.march.cat"
       },
       {
-        label: "Talk to founders",
+        label: "talk to founders",
         url: "https://cal.com/march",
         display: "cal.com/march"
       },
       {
-        label: "Twitter",
+        label: "twitter",
         url: "https://twitter.com/march",
         display: "twitter.com/march"
       }
     ]
   },
   {
-    title: "Repositories",
-    description: "",
-    icon: `<svg style="display: inline-block; width: 1rem; height: 1rem; margin-right: 0.5rem;" viewBox="0 0 16 16" fill="currentColor">
-      <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/>
-    </svg>`,
+    title: "repositories",
     repos: [
       {
-        name: "yourusername/march",
-        description: "Connect your stack and see action items in email-like split inboxes.",
-        language: "TypeScript",
-        stars: 0,
-        forks: 0
+        name: "marchhq/march",
+        description: "second brain for people living on mars;",
+        languages: [
+          {
+            name: "TypeScript",
+            color: "#3178C6",
+            percentage: 73.3
+          },
+          {
+            name: "JavaScript",
+            color: "#f1e05a",
+            percentage: 25.7
+          }
+        ],
+        stars: 40,
+        forks: 52
+      }
+    ]
+  },
+  {
+    title: "founders",
+    contributors: [
+      {
+        username: "sajdakabir",
+        avatar: "https://github.com/sajdakabir.png",
+        url: "https://github.com/sajdakabir"
+      },
+      {
+        username: "oliursahin",
+        avatar: "https://github.com/oliursahin.png",
+        url: "https://github.com/oliursahin"
       }
     ]
   }
 ];
-
-const stats = {
-  stars: "★ 0",
-  forks: "⑂ 0",
-  contributors: "👥 1"
-};
 ---
 
-<Layout title="March - Connect your stack and see action items in split inboxes">
-  <div class="min-h-screen bg-white text-gray-900 font-['Inter'] py-16">
-    <div class="max-w-[900px] mx-auto px-8">
-      <!-- GitHub-style container -->
+<Layout title="march - second brain for people living on mars">
+  <div class="min-h-screen bg-white text-gray-900 font-['Inter'] py-12 overflow-x-hidden">
+    <div class="max-w-[800px] mx-auto px-6">
       <div class="border border-gray-200 rounded-lg">
-        <!-- Header -->
         <div class="border-b border-gray-200 bg-white">
-          <div class="px-5 py-3 flex items-center justify-between">
+          <div class="px-4 py-2 flex items-center justify-between">
             <div class="flex items-center gap-1 text-[13px]">
               <span class="text-gray-600">march</span>
               <span class="text-gray-600">/</span>
               <span class="text-gray-900">landing.md</span>
             </div>
-            <a 
-              href="https://github.com/yourusername/march" 
-              class="text-gray-600 hover:text-gray-900 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"/>
-              </svg>
+            <a href="https://github.com/marchhq/readme" class="text-gray-600 hover:text-gray-900">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
             </a>
           </div>
         </div>
 
-        <!-- Main content -->
-        <div class="px-10 py-10 space-y-16">
+        <div class="px-8 py-8 space-y-12">
           {features.map(feature => (
             <div>
-              <h3 class="text-[15px] font-semibold text-gray-900 mb-3">
-                <Fragment set:html={feature.icon} />
+              <h3 class="text-[15px] font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                {feature.repos && 
+                  <svg height="16" viewBox="0 0 16 16" width="16" class="text-gray-600" style="fill: currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>
+                }
+                {feature.contributors && 
+                  <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z"/>
+                  </svg>
+                }
                 {feature.title}
               </h3>
               {feature.description && (
-                <p class="text-[13px] text-gray-600 leading-relaxed whitespace-pre-line space-y-1.5" set:html={feature.description}></p>
+                <div class="text-[13px] text-gray-600 leading-relaxed" set:html={feature.description}></div>
               )}
               {feature.links && (
                 <div class="text-[13px] text-gray-600 leading-relaxed space-y-1">
@@ -129,66 +162,61 @@ const stats = {
               {feature.repos && (
                 <div class="space-y-4 mt-4">
                   {feature.repos.map(repo => (
-                    <div class="border border-gray-200 rounded-md p-4">
-                      <div class="flex items-center justify-between mb-2">
-                        <a href={`https://github.com/${repo.name}`} class="text-[14px] font-semibold text-gray-600 hover:text-gray-900 transition-colors underline">
+                    <div class="space-y-3">
+                      <div class="flex items-center justify-between">
+                        <a href={`https://github.com/${repo.name}`} class="text-[14px] text-gray-900 hover:underline">
                           {repo.name}
                         </a>
-                        <div class="flex items-center gap-4 text-[12px] text-gray-600">
-                          <span class="flex items-center gap-1">
-                            <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
-                              <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z"/>
-                            </svg>
-                            {repo.stars}
-                          </span>
-                          <span class="flex items-center gap-1">
-                            <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
-                              <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/>
-                            </svg>
-                            {repo.forks}
-                          </span>
+                        <div class="flex items-center gap-3 text-[13px] text-gray-600">
+                          <span>⭐ {repo.stars}</span>
+                          <span>🔄 {repo.forks}</span>
                         </div>
                       </div>
                       <p class="text-[13px] text-gray-600">{repo.description}</p>
-                      <div class="flex items-center gap-2 mt-3">
-                        <span class="w-3 h-3 rounded-full bg-blue-500"></span>
-                        <span class="text-[12px] text-gray-600">{repo.language}</span>
+                      <div class="flex items-center gap-3">
+                        {repo.languages.map(lang => (
+                          <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded-full" style={{ backgroundColor: lang.color }}></span>
+                            <span class="text-[12px] text-gray-600">{lang.name} {lang.percentage}%</span>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   ))}
                 </div>
               )}
+              {feature.contributors && (
+                <div class="flex items-center gap-2 mt-4">
+                  {feature.contributors.map(contributor => (
+                    <a 
+                      href={contributor.url}
+                      class="hover:opacity-80 transition-opacity"
+                      title={contributor.username}
+                    >
+                      <img 
+                        src={contributor.avatar}
+                        alt={contributor.username}
+                        class="w-8 h-8 rounded-full"
+                      />
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
-
-          <!-- Contributors -->
-          <div>
-            <h3 class="text-[15px] font-semibold text-gray-900 mb-3">
-              <svg class="inline-block w-4 h-4 mr-2" viewBox="0 0 16 16" fill="currentColor">
-                <path d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z"/>
-              </svg>
-              Contributors
-            </h3>
-            <div class="flex gap-2">
-              <a href="https://github.com/yourusername" class="hover:opacity-80 transition-opacity">
-                <img src="https://github.com/yourusername.png" alt="Your Name" class="w-8 h-8 rounded-full" />
-              </a>
-            </div>
-          </div>
         </div>
       </div>
-
-      <footer class="mt-8 text-center text-gray-500 space-y-6">
-        <div class="flex justify-center gap-4 text-[13px] text-gray-500">
-          <a href="/terms" class="underline hover:text-gray-900 transition-colors">Terms</a>
-          <a href="/privacy" class="underline hover:text-gray-900 transition-colors">Privacy</a>
+      <div class="flex flex-col items-center gap-2 mt-6 text-[13px] text-gray-600">
+        <div class="flex items-center gap-4">
+          <a href="/terms" class="text-gray-600 hover:text-gray-900 transition-colors underline">Terms</a>
+          <a href="/privacy" class="text-gray-600 hover:text-gray-900 transition-colors underline">Privacy</a>
         </div>
-        <p class="text-[13px]"> 2025 March. All rights reserved.</p>
-      </footer>
+        <div>&#169; march</div>
+      </div>
     </div>
   </div>
 </Layout>
 
-<style is:global>
+<style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 </style>
